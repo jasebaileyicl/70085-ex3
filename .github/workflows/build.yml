@@ -30,11 +30,8 @@ jobs:
         with:
           python-version: 3.12
 
-      - name: Install flask
-        run: pip install flask
-
-      - name: Install pytest
-        run: pip install pytest
+      - name: install requirements
+        run: pip install -r requirements.txt
 
       - name: Run pytest
         run: pytest app_test.py
