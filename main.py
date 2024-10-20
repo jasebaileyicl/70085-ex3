@@ -1,4 +1,6 @@
 from flask import Flask
+from flask import request
+
 
 app = Flask(__name__)
 
@@ -6,6 +8,12 @@ app = Flask(__name__)
 @app.route("/")
 def hello_world():
     return "<p>Hello, World! Again</p>"
+
+
+@app.route("/query")
+def get_query():
+    query = request.args.get("q")
+    return process_query(query)
 
 
 def process_query(query: str):
