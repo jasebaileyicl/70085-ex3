@@ -45,6 +45,6 @@ jobs:
       - name: ImPaaS-Deploy
         uses: /impaas/impaas-deploy@v3
         with:
-          app-name: jsbailey-sse-app
+          app-name: testjsbailey-app
           deployment-token: ${{ secrets.IMPAAS_DEPLOY_TOKEN }}
           method: PLATFORM
