@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "<p>NEW Token Hello, World! Again</p>"
+    return "<p>NEW NEW Token Hello, World! Again</p>"
 
 
 @app.route("/query")
